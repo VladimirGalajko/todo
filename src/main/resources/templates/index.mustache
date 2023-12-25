@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<body>
+<h1>Employee List</h1>
+<form action="" method="post">
+    <!-- Text input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="text" required>
+    <br>
+
+    <!-- Password input -->
+    <label for="descr">Descr:</label>
+    <input type="text" id="descr" name="tag" required>
+    <br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+</form>
+<ul>
+    {{#todo}}
+        <li>{{text}} ({{tag}})</li>
+    {{/todo}}
+</ul>
+</body>
+</html>
